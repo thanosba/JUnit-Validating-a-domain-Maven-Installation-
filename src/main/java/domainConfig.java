@@ -1,7 +1,8 @@
 import java.util.regex.Pattern;
 
 public class domainConfig {
-    private static final String DOMAIN_NAME_PATTERN = "^((?!-)[A-Za-z0-9-]{1,63}(?<!-)\\.)+[A-Za-z]{2,6}$";
+  private static final String DOMAIN_NAME_PATTERN =
+      "^((?!-)[\\u0E00-\\u0E7FA-Za-z0-9-]{1,63}(?<!-)\\.)+[\\u0E00-\\u0E7FA-Za-z]{2,20}$";
 
     private static Pattern pDomainName = Pattern.compile(DOMAIN_NAME_PATTERN);
 
